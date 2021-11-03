@@ -21,10 +21,10 @@ html {
     --main-font: white;
     --sub-font: gray;
 
-    --left-width: 20%;
-    --right-width: 80%;
-
     --side-nav-spacing: 15px;
+
+    --side-nav-width: 250px;
+    --common-height: 80px;
 }
 
 ul {
@@ -49,8 +49,9 @@ a {
 .cta {
     position: fixed;
     display: flex;
-    width: var(--right-width);
-    height: 80px;
+    /* width: var(--right-width); */
+    width: calc(100vw - 250px);
+    height: var(--common-height);
     background-color: rgba(0,0,0,0.5);
     align-items: center;
     justify-content: flex-end;
@@ -72,19 +73,30 @@ a {
     display: flex;
 }
 
+.side-nav-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
 .side-nav {
-    width: var(--left-width);
-    height: calc(100vh - 80px);
+    width: var(--side-nav-width);
+    height: calc(100vh - var(--common-height));
     background-color: var(--deep-black);
 }
 
+.side-nav-top {
+    width: 100%;
+    height: 200px;
+}
+
 .logo {
-    width: 70%;
+    width: 180px;
     padding-left: var(--side-nav-spacing);
     margin-top: var(--side-nav-spacing);
 }
 
 .side-nav-link {
+    width: 100%;
     padding-left: var(--side-nav-spacing);
     margin-top: var(--side-nav-spacing);
 }
@@ -106,14 +118,41 @@ a {
     fill: var(--side-icon);
 }
 
+/* playlist section */
+.side-nav-playlist-container {
+    width: 100%;
+    height: calc(100vh - 200px - var(--common-height) * 2);
+    overflow: auto;
+
+}
+
+.side-nav-playlist-container > h2 {
+    color: var(--main-font);
+    text-transform: uppercase;
+    margin-left: var(--side-nav-spacing);
+    padding-top: var(--side-nav-spacing);
+    font-size: 1.2em;
+}
+
+.side-nav-playlist {
+    width: 100%;
+}
+
+.side-nav-bottom {
+    width: 100%;
+    height: var(--common-height);
+    background-color: var(--spoty-green);
+}
+
+
 .core-main {
-    width: var(--right-width);
-    height: calc(100vh - 80px);
+    width: calc(100vw - var(--side-nav-width));
+    height: calc(100vh - var(--common-height));
     background-color: var(--deep-blue);
 }
 
 .footer-nav {
     width: 100%;
-    height: 80px;
+    height: var(--common-height);
     background-color: var(--dark-gray);
 }
