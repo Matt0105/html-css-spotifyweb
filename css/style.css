@@ -82,6 +82,7 @@ a {
     width: var(--side-nav-width);
     height: calc(100vh - var(--common-height));
     background-color: var(--deep-black);
+    padding-left: var(--side-nav-spacing);
 }
 
 .side-nav-top {
@@ -91,13 +92,13 @@ a {
 
 .logo {
     width: 180px;
-    padding-left: var(--side-nav-spacing);
+    /* padding-left: var(--side-nav-spacing); */
     margin-top: var(--side-nav-spacing);
 }
 
 .side-nav-link {
     width: 100%;
-    padding-left: var(--side-nav-spacing);
+    /* padding-left: var(--side-nav-spacing); */
     margin-top: var(--side-nav-spacing);
 }
 .side-nav-link .side-nav-item {
@@ -123,19 +124,49 @@ a {
     width: 100%;
     height: calc(100vh - 200px - var(--common-height) * 2);
     overflow: auto;
-
 }
 
-.side-nav-playlist-container > h2 {
+.section-title {
     color: var(--main-font);
     text-transform: uppercase;
-    margin-left: var(--side-nav-spacing);
     padding-top: var(--side-nav-spacing);
     font-size: 1.2em;
 }
 
 .side-nav-playlist {
     width: 100%;
+}
+
+.add-playlist {
+    display: flex;
+    align-items: center;
+}
+
+.add-square {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--playlist-gray);
+    margin-top: 5px;
+}
+.add-square > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+.playlist-title {
+    color: var(--sub-font);
+    font-size: 1em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.side-nav-playlist .playlist-title {
+    font-size: 0.9em;
+    margin-top: var(--side-nav-spacing)
 }
 
 .side-nav-bottom {
