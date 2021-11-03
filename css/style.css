@@ -8,3 +8,16 @@ html {
     font-size: 100%;
     font-family: font-family: 'Montserrat', sans-serif;
 }
+
+/* common rules */
+
+:root {
+    --deep-black: black;
+    --dark-gray: #282828;
+    --deep-blue: #141922;
+    --spoty-green: #ADFF2F;
+    --playlist-gray: #a3a3a3;
+    --main-font: white;
+    --sub-font: gray;
+}
+
