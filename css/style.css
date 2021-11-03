@@ -6,7 +6,7 @@
 
 html {
     font-size: 100%;
-    font-family: font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* common rules */
@@ -17,11 +17,22 @@ html {
     --deep-blue: #141922;
     --spoty-green: #ADFF2F;
     --playlist-gray: #a3a3a3;
+    --side-icon: #d2d2d2;
     --main-font: white;
     --sub-font: gray;
 
     --left-width: 20%;
     --right-width: 80%;
+
+    --side-nav-spacing: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* grandezza web app */
@@ -53,8 +64,10 @@ html {
     background-color: rgba(0,0,0,0.5);
     border: 1px solid var(--main-font);
     border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* main container */
 .wrapper {
     display: flex;
 }
@@ -63,6 +76,34 @@ html {
     width: var(--left-width);
     height: calc(100vh - 80px);
     background-color: var(--deep-black);
+}
+
+.logo {
+    width: 70%;
+    padding-left: var(--side-nav-spacing);
+    margin-top: var(--side-nav-spacing);
+}
+
+.side-nav-link {
+    padding-left: var(--side-nav-spacing);
+    margin-top: var(--side-nav-spacing);
+}
+.side-nav-link .side-nav-item {
+    padding: 0.4em 0;
+}
+.side-nav-link .side-nav-item a{
+    color: var(--sub-font);
+}
+.side-nav-link .side-nav-item svg{
+    height: 1.5em;
+    vertical-align: bottom;
+    fill: var(--sub-font);
+}
+.side-nav-link .side-nav-item:first-child a {
+    color: var(--side-icon);
+}
+.side-nav-link .side-nav-item:first-child a svg {
+    fill: var(--side-icon);
 }
 
 .core-main {
