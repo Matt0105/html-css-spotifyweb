@@ -80,7 +80,6 @@ a {
     height: calc(100% - var(--common-height));
 }
 
-
 .side-nav {
     width: var(--side-nav-width);
     height: 100%;
@@ -94,7 +93,6 @@ a {
 .side-nav li a:hover svg{
     fill: var(--main-font);
 }
-
 
 .side-nav-top {
     width: 100%;
@@ -159,7 +157,6 @@ a {
     height: 70%;
     overflow: auto;
 }
-
 
 .add-playlist {
     display: flex;
@@ -286,7 +283,75 @@ a {
     width: calc(100vw - var(--side-nav-width));
     height: calc(100vh - var(--common-height));
     background-color: var(--deep-blue);
+    padding-top: var(--common-height);
 }
+
+.core-main-nav .side-nav-link .side-nav-item a {
+    text-transform: uppercase;
+}
+.core-main-nav .side-nav-link .side-nav-item.underline {
+    position: relative;
+}
+.core-main-nav .side-nav-link .side-nav-item.underline::after {
+    content: '';
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25px);
+    border-bottom: 2px solid var(--spoty-green);
+}
+.core-main-nav .side-nav-link .side-nav-item a:hover {
+    color: var(--main-font);
+}
+
+.core-main-nav .side-nav-link {
+    text-align: center;
+}
+
+.core-main-nav .side-nav-link .side-nav-item {
+    display: inline-block;
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+
+.core-main-container {  /*attenzione al resizing*/
+    width: 95%;
+    margin: 1em auto;
+}
+
+.name-playlist-list {
+    color: var(--main-font);
+    font-size: 1.5em;
+}
+
+.song-list {
+    margin-top: 1em;
+    display: flex;
+}
+
+.song-list .song-item {
+    width: calc(100% / 6);
+    margin-right: var(--side-nav-spacing);
+}
+.song-list .song-item img {
+    width: 100%;
+}
+.song-list .song-item a {
+    color: var(--main-font);
+}
+
+
+.my-playlist-name {
+    text-align: center;
+}
+.my-playlist-name h2 {
+    font-size: 1.2em;
+}
+.my-playlist-name span {
+    font-size: 0.7em;
+    color: var(--sub-font);
+}
+
 
 /* barra di riproduzione del footer */
 .footer-nav {
