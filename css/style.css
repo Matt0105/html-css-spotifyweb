@@ -288,7 +288,75 @@ a {
 }
 
 .footer-nav {
+    display: flex;
     width: 100%;
     height: var(--common-height);
     background-color: var(--dark-gray);
+    justify-content: space-between;
+}
+
+.current-song {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.current-song img{
+    height: 70%;
+    margin-right: 10px;
+}
+
+.name-info {
+    display: inline-block;
+    margin-right: 1.5em;
+
+}
+
+.media-options {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.current-song .playlist-name {
+    font-size: 0.8em;
+    color: var(--main-font);
+}
+.current-song .song-name {
+    color: var(--sub-font);
+    font-weight: normal;
+    font-size: 0.7em;
+}
+
+.song-action {
+    margin: 0 0.5em;
+    border: none;
+    color: var(--sub-font);
+    background-color: var(--dark-gray);
+}
+
+
+.media-options .media-btn {
+    background-color: var(--dark-gray);
+    border: none;
+    color: var(--main-font);
+    margin: 0 0.5em;
+}
+
+.progress-bar-container{
+    height: 3px;
+    background-color: var(--sub-font);
+    border-radius: 10px;
+}
+
+.progress-bar-container.volume {
+    width: 100px;
+}
+
+.progress-bar {
+    width: 30%;
+    height: 100%;
+    background-color: var(--main-font);
 }

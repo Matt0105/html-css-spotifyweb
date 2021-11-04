@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -98,7 +100,41 @@
         <!-- /contenitore delle due colonne del main -->
 
     
-        <footer class="footer-nav"></footer>    
+        <footer class="footer-nav">
+            <!-- colonna sinistra footer -->
+            <div class="current-song">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="name-info">
+                    <h4 class="playlist-name">Sinister</h4>
+                    <h5 class="song-name">Nome Brano</h5>
+                </div>
+
+                <button class="song-action"><i class="far fa-heart"></i></button>
+                <button class="song-action"><i class="far fa-folder"></i></button>
+
+            </div>
+            <!-- /colonna sinistra footer -->
+
+            <!-- controllo riproduttore musicale -->
+            <div class="song-control">
+
+            </div>
+            <!-- /controllo riproduttore musicale -->
+            
+            <!-- colonna di destra footer per controllo media -->
+            <div class="media-options">
+                <button class="media-btn"><i class="fas fa-list-ul"></i></button>
+                <button class="media-btn"><i class="fas fa-desktop"></i></button>
+                <span class="media-btn"><i class="fas fa-volume-up"></i></span>
+                <div class="progress-bar-container volume">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <!-- /colonna di destra footer per controllo media -->
+
+
+        </footer>   
+
     </div>
     
     
