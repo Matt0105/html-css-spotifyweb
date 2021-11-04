@@ -24,6 +24,7 @@ html {
     --side-nav-spacing: 15px;
 
     --side-nav-width: 250px;
+    --side-nav-small-width: 60px;
     --common-height: 80px;
 }
 
@@ -51,7 +52,7 @@ a {
     position: fixed;
     display: flex;
     /* width: var(--right-width); */
-    width: calc(100vw - 250px);
+    width: calc(100vw - var(--side-nav-width));
     height: var(--common-height);
     background-color: rgba(0,0,0,0.5);
     align-items: center;
@@ -251,6 +252,31 @@ a {
     }
     .logo.small {
         display: block;
+        width: 30px;
+    }
+
+    .namelabel {
+        display: none;
+    }
+
+    .side-nav-playlist-container {
+        display: none;
+    }
+
+    .account {
+        margin-top: 10px;
+    }
+
+    .side-nav {
+        width: var(--side-nav-small-width)
+    }
+
+    .app-container .cta {
+    width: calc(100vw - var(--side-nav-small-width));
+    }
+
+    .wrapper .core-main {
+        width: calc(100vw - var(--side-nav-small-width));
     }
 }
 
