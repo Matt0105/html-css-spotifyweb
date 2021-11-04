@@ -281,13 +281,14 @@ a {
     }
 }
 
-
+/* parte principale della colonna di destra */
 .core-main {
     width: calc(100vw - var(--side-nav-width));
     height: calc(100vh - var(--common-height));
     background-color: var(--deep-blue);
 }
 
+/* barra di riproduzione del footer */
 .footer-nav {
     display: flex;
     width: 100%;
@@ -353,6 +354,7 @@ a {
 .song-control-top {
     text-align: center;
 }
+
 .song-control-top .media-btn {
     font-size: 1em;
 }
@@ -366,6 +368,19 @@ a {
 .song-control-bottom {
     width: 100%;
     text-align: center;
+}
+
+.progress-bar-container{
+    height: 3px;
+    background-color: var(--sub-font);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.progress-bar {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: var(--main-font);
 }
 
 .progress-bar-container.song {
@@ -395,22 +410,8 @@ a {
     flex-shrink: 1;
 }
 
-.progress-bar-container{
-    height: 3px;
-    background-color: var(--sub-font);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .progress-bar-container.volume {
     width: 100px;
-}
-
-.progress-bar {
-    position: relative;
-    width: 30%;
-    height: 100%;
-    background-color: var(--main-font);
 }
 
 .progress-bar-container:hover .circle-volume {
