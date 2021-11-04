@@ -51,7 +51,6 @@ a {
 .cta {
     position: fixed;
     display: flex;
-    /* width: var(--right-width); */
     width: calc(100vw - var(--side-nav-width));
     height: var(--common-height);
     background-color: rgba(0,0,0,0.5);
@@ -84,7 +83,6 @@ a {
 
 .side-nav {
     width: var(--side-nav-width);
-    /* height: calc(100vh - var(--common-height)); */
     height: 100%;
     background-color: var(--deep-black);
     padding-left: var(--side-nav-spacing);
@@ -100,7 +98,6 @@ a {
 
 .side-nav-top {
     width: 100%;
-    /* height: calc(100vh - var(--common-height) * 2); */
     height: calc(100% - var(--common-height));
     min-height: 400px;
 }
@@ -146,7 +143,6 @@ a {
 /* playlist section */
 .side-nav-playlist-container {
     width: 100%;
-    /* height: calc(100vh - 210px - var(--common-height) * 2); */
     height: calc(100% - 210px);
     overflow: hidden;
 }
@@ -160,7 +156,6 @@ a {
 
 .side-nav-playlist {
     width: 100%;
-    /* height: calc(100vh - 210px - 20px - 60px - var(--common-height) * 2); */
     height: 70%;
     overflow: auto;
 }
@@ -302,10 +297,12 @@ a {
 }
 
 .current-song {
+    width: 200px;
     height: 100%;
     display: flex;
     align-items: center;
     margin-left: 10px;
+    flex-shrink: 1;
 }
 
 .current-song img{
@@ -315,15 +312,8 @@ a {
 
 .name-info {
     display: inline-block;
-    margin-right: 1.5em;
+    /* margin-right: 1.5em; */
 
-}
-
-.media-options {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    margin-right: 10px;
 }
 
 .current-song .playlist-name {
@@ -343,12 +333,54 @@ a {
     background-color: var(--dark-gray);
 }
 
+.song-control {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    flex-shrink: 1;
+}
 
-.media-options .media-btn {
+.song-control-top {
+    text-align: center;
+}
+.song-control-top .media-btn {
+    font-size: 1em;
+}
+.song-control-top .media-btn.play {
+    font-size: 1.5em;
+}
+
+.song-control-bottom {
+    width: 100%;
+    text-align: center;
+}
+
+.progress-bar-container.song {
+    width: 60%;
+    display: inline-block;
+}
+
+.time {
+    font-size: 0.7em;
+    margin: 0 1%;
+    color: var(--main-font);
+}
+
+.media-btn {
     background-color: var(--dark-gray);
     border: none;
     color: var(--main-font);
     margin: 0 0.5em;
+}
+
+.media-options {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    align-items: center;
+    flex-shrink: 1;
 }
 
 .progress-bar-container{
