@@ -78,12 +78,14 @@ a {
 .wrapper {
     display: flex;
     overflow: hidden;
+    height: calc(100% - var(--common-height));
 }
 
 
 .side-nav {
     width: var(--side-nav-width);
-    height: calc(100vh - var(--common-height));
+    /* height: calc(100vh - var(--common-height)); */
+    height: 100%;
     background-color: var(--deep-black);
     padding-left: var(--side-nav-spacing);
 }
@@ -98,7 +100,8 @@ a {
 
 .side-nav-top {
     width: 100%;
-    height: calc(100vh - var(--common-height) * 2);
+    /* height: calc(100vh - var(--common-height) * 2); */
+    height: calc(100% - var(--common-height));
     min-height: 400px;
 }
 .side-nav-top-top {
@@ -143,7 +146,9 @@ a {
 /* playlist section */
 .side-nav-playlist-container {
     width: 100%;
-    height: calc(100vh - 210px - var(--common-height) * 2);
+    /* height: calc(100vh - 210px - var(--common-height) * 2); */
+    height: calc(100% - 210px);
+    overflow: hidden;
 }
 
 .section-title {
@@ -155,7 +160,8 @@ a {
 
 .side-nav-playlist {
     width: 100%;
-    height: calc(100vh - 210px - 20px - 60px - var(--common-height) * 2);
+    /* height: calc(100vh - 210px - 20px - 60px - var(--common-height) * 2); */
+    height: 70%;
     overflow: auto;
 }
 
