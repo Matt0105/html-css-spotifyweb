@@ -148,7 +148,7 @@ a {
 .section-title {
     color: var(--main-font);
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 20px;
 }
 
@@ -284,6 +284,8 @@ a {
     height: calc(100vh - var(--common-height));
     background-color: var(--deep-blue);
     padding-top: var(--common-height);
+    overflow: auto;
+    padding-bottom: var(--side-nav-spacing);
 }
 
 .core-main-nav .side-nav-link .side-nav-item a {
@@ -316,7 +318,7 @@ a {
 
 .core-main-container {  /*attenzione al resizing*/
     width: 95%;
-    margin: 1em auto;
+    margin: 0 auto;
 }
 
 .name-playlist-list {
@@ -330,26 +332,40 @@ a {
 }
 
 .song-list .song-item {
-    width: calc(100% / 6);
-    margin-right: var(--side-nav-spacing);
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
 }
 .song-list .song-item img {
     width: 100%;
+    max-width: 150px;
 }
 .song-list .song-item a {
     color: var(--main-font);
 }
+.song-list .song-item .thumb {
+    text-align: center;
+}
+
 
 
 .my-playlist-name {
     text-align: center;
 }
-.my-playlist-name h2 {
-    font-size: 1.2em;
+.playlist-section h2 {
+    font-size: 1em;
 }
-.my-playlist-name span {
+.playlist-section span {
     font-size: 0.7em;
     color: var(--sub-font);
+}
+.name-playlist-list {
+    margin-top: 1em;
+}
+
+.playlist-section.popular img {
+    border-radius: 50%;
 }
 
 
@@ -473,6 +489,7 @@ a {
     height: 100%;
     align-items: center;
     flex-shrink: 1;
+    margin-right: 10px;
 }
 
 .progress-bar-container.volume {
