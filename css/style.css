@@ -434,6 +434,13 @@ a {
     }
 }
 
+@media screen and (max-height: 159px) {
+    
+    .cta-container {
+        display: none;
+    }
+}
+
 /* barra di riproduzione del footer */
 .footer-nav {
     display: flex;
