@@ -135,6 +135,7 @@ a {
 }
 .side-nav-top-top > .side-nav-link .side-nav-item:first-child {
     border-left: 3px solid var(--spoty-green);
+    padding-left: calc(var(--side-nav-spacing) - 3px);
 }
 
 /* playlist section */
@@ -246,40 +247,6 @@ a {
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-    .logo {
-        display: none;
-    }
-    .logo.small {
-        display: block;
-        width: 30px;
-    }
-
-    .namelabel {
-        display: none;
-    }
-
-    .side-nav-playlist-container {
-        display: none;
-    }
-
-    .account {
-        margin-top: 10px;
-    }
-
-    .side-nav {
-        width: var(--side-nav-small-width)
-    }
-
-    .app-container .cta {
-    width: calc(100vw - var(--side-nav-small-width));
-    }
-
-    .wrapper .core-main {
-        width: calc(100vw - var(--side-nav-small-width));
-    }
-}
-
 /* parte principale della colonna di destra */
 .core-main {
     width: calc(100vw - var(--side-nav-width));
@@ -316,6 +283,7 @@ a {
     display: inline-block;
     font-size: 0.9em;
     margin-right: 1em;
+    padding: 0.4em 0;
 }
 
 .core-main-container {  /*attenzione al resizing*/
@@ -354,7 +322,7 @@ a {
     text-align: center;
 }
 .playlist-section h2 {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 .playlist-section span {
     font-size: 0.7em;
@@ -384,6 +352,43 @@ a {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+    .logo.small {
+        display: block;
+        width: 30px;
+    }
+
+    .namelabel {
+        display: none;
+    }
+
+    .side-nav-playlist-container {
+        display: none;
+    }
+
+    .account {
+        margin-top: 10px;
+    }
+
+    .side-nav {
+        width: var(--side-nav-small-width)
+    }
+
+    .app-container .cta {
+    width: calc(100vw - var(--side-nav-small-width));
+    }
+
+    .wrapper .core-main {
+        width: calc(100vw - var(--side-nav-small-width));
+    }
+
+    .song-list .song-item img {
+        max-width: 220px;
+    }
+}
 
 /* barra di riproduzione del footer */
 .footer-nav {
