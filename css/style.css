@@ -434,6 +434,26 @@ a {
     }
 }
 
+@media screen and (max-width: 582px) {
+    
+    .footer-nav .media-options {
+        display: none;
+    }
+
+    .footer-nav .current-song .far.fa-folder {
+        display: none;
+    }
+
+    .footer-nav .current-song .name-info {
+        margin-right: 5px;
+    }
+
+    .footer-nav .current-song {
+        width: 300px;
+    }
+
+}
+
 @media screen and (max-height: 159px) {
     
     .cta-container {
