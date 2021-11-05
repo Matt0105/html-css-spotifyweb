@@ -315,7 +315,23 @@ a {
     color: var(--main-font);
 }
 .song-list .song-item .thumb {
+    position: relative;
     text-align: center;
+}
+.song-list .song-item .thumb:hover img{
+    filter: brightness(50%);
+}
+
+.song-list .song-item .thumb .far.fa-play-circle {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+.song-list .song-item .thumb:hover .far.fa-play-circle {
+    display: block;
 }
 
 .my-playlist-name {
@@ -358,7 +374,7 @@ a {
     }
     .logo.small {
         display: block;
-        width: 30px;
+        width: 40px;
     }
 
     .namelabel {
